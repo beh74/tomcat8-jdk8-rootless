@@ -14,10 +14,10 @@ RUN addgroup -S tomcat && adduser -S tomcat -G tomcat -h /home/tomcat
 USER tomcat
 
 # download tomcat 8
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.zip -P /home/tomcat/
-RUN unzip /home/tomcat/apache-tomcat-8.5.93.zip -d /home/tomcat/
-RUN rm /home/tomcat/apache-tomcat-8.5.93.zip
-RUN mv /home/tomcat/apache-tomcat-8.5.93 /home/tomcat/apache-tomcat
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.94/bin/apache-tomcat-8.5.94.zip -P /home/tomcat/
+RUN unzip /home/tomcat/apache-tomcat-8.5.94.zip -d /home/tomcat/
+RUN rm /home/tomcat/apache-tomcat-8.5.94.zip
+RUN mv /home/tomcat/apache-tomcat-8.5.94 /home/tomcat/apache-tomcat
 
 # remove all default webapps
 RUN rm -rf /home/tomcat/apache-tomcat/webapps/*
