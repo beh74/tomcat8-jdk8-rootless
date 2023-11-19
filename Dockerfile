@@ -3,7 +3,7 @@ FROM alpine:3.18.3
 LABEL maintainer="hartwig.bertrand@gmail.com"
 LABEL description="Tomcat 8 jdk 8 root less"
 
-# install jdk17
+# install jdk8
 RUN apk update
 RUN apk upgrade
 RUN apk add --no-cache openjdk8
