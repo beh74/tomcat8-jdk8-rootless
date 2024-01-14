@@ -6,7 +6,6 @@ LABEL description="Tomcat 8 jdk 8 root less"
 # Upgrade base image
 RUN apk update
 RUN apk upgrade
-RUN apk cache clean
 
 # Create a tomcat group and user 
 RUN addgroup -S tomcat && adduser -S tomcat -G tomcat -h /home/tomcat
