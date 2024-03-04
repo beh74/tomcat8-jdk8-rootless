@@ -11,10 +11,10 @@ RUN addgroup -S tomcat && adduser -S tomcat -G tomcat -h /home/tomcat
 USER tomcat
 
 # download and install tomcat 8
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.98/bin/apache-tomcat-8.5.98.zip -P /home/tomcat/ \
-    && unzip /home/tomcat/apache-tomcat-8.5.98.zip -d /home/tomcat/ \
-    && rm /home/tomcat/apache-tomcat-8.5.98.zip \
-    && mv /home/tomcat/apache-tomcat-8.5.98 /home/tomcat/apache-tomcat \
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.zip -P /home/tomcat/ \
+    && unzip /home/tomcat/apache-tomcat-8.5.99.zip -d /home/tomcat/ \
+    && rm /home/tomcat/apache-tomcat-8.5.99.zip \
+    && mv /home/tomcat/apache-tomcat-8.5.99 /home/tomcat/apache-tomcat \
     && rm -rf /home/tomcat/apache-tomcat/webapps/* \
     && chmod +x /home/tomcat/apache-tomcat/bin/*.sh
 
